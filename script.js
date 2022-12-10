@@ -40,7 +40,7 @@ class MixOrMatch {
         this.ticker = document.getElementById('flips');
         this.audioController = new AudioController();
     }
-
+//game start
     startGame() {
         this.totalClicks = 0;
         this.timeRemaining = this.totalTime;
@@ -57,6 +57,7 @@ class MixOrMatch {
         this.timer.innerText = this.timeRemaining;
         this.ticker.innerText = this.totalClicks;
     }
+    //countdown
     startCountdown() {
         return setInterval(() => {
             this.timeRemaining--;
@@ -65,22 +66,26 @@ class MixOrMatch {
                 this.gameOver();
         }, 1000);
     }
+    //game over
     gameOver() {
         clearInterval(this.countdown);
         this.audioController.gameOver();
         document.getElementById('game-over-text').classList.add('visible');
     }
+    //victory
     victory() {
         clearInterval(this.countdown);
         this.audioController.victory();
         document.getElementById('victory-text').classList.add('visible');
     }
+    //cards array
     hideCards() {
         this.cardsArray.forEach(card => {
             card.classList.remove('visible');
             card.classList.remove('matched');
         });
     }
+    //flip cards
     flipCard(card) {
         if(this.canFlipCard(card)) {
             this.audioController.flip();
@@ -95,6 +100,7 @@ class MixOrMatch {
             }
         }
     }
+    //check for matching cards
     checkForCardMatch(card) {
         if(this.getCardType(card) === this.getCardType(this.cardToCheck))
             this.cardMatch(card, this.cardToCheck);
@@ -103,6 +109,7 @@ class MixOrMatch {
 
         this.cardToCheck = null;
     }
+    //matching the cards
     cardMatch(card1, card2) {
         this.matchedCards.push(card1);
         this.matchedCards.push(card2);
@@ -112,6 +119,7 @@ class MixOrMatch {
         if(this.matchedCards.length === this.cardsArray.length)
             this.victory();
     }
+    //cards mismatch
     cardMismatch(card1, card2) {
         this.busy = true;
         setTimeout(() => {
