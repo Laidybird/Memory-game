@@ -5,7 +5,7 @@
 
 html {
   min-height: 100vh;
-  cursor: url(Assets/Cursors/Ghost.cur), auto;
+  cursor: url("Audio/Ghost.cur"), auto;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -44,7 +44,7 @@ body {
 
 .card {
   position: relative;
-  cursor: url("Assets/Cursors/GhostHover.cur"), auto;
+  cursor: url("Audio/GhostHover.cur"), auto;
   height: 175px;
   width: 125px;
 }
