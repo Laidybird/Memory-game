@@ -6,33 +6,33 @@
 html {
   min-height: 100vh;
   cursor: url("Audio/Ghost.cur"), auto;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Nerko', sans-serif;
 }
 
 body {
   margin: 0;
   background: radial-gradient(#9D5900, #3D2200);
 }
-
+/*page title*/
 .page-title {
   color: #FF6D00;
-  font-family: Creepy, serif;
+  font-family: 'Nerko', sans-serif;
   font-weight: normal;
   text-align: center;
   font-size: 6em;
 }
-
+/*game info container*/
 .game-info-container {
   grid-column: 1 / -1;
   display: flex;
   justify-content: space-between;
 }
-
+/*game info*/
 .game-info {
   color: #FFBB89;
   font-size: 4em;
 }
-
+/*game*/
 .game-container {
   margin: 50px auto;
   display: grid;
@@ -41,14 +41,14 @@ body {
   justify-content: center;
   perspective: 500px;
 }
-
+/*card*/
 .card {
   position: relative;
   cursor: url("Audio/GhostHover.cur"), auto;
   height: 175px;
   width: 125px;
 }
-
+/*card face*/
 .card-face {
   position: absolute;
   display: flex;
@@ -63,7 +63,7 @@ body {
   transition: transform 500ms ease-in-out;
   backface-visibility: hidden;
 }
-
+/*card style*/
 .card.visible .card-back {
   transform: rotateY(-180deg); 
 }
@@ -122,7 +122,7 @@ body {
   transition: transform 100ms ease-in-out;
   transform: translateY(-10px);
 }
-
+/*card back hover*/
 .card-back:hover .spider {
   transform: translateY(0);
 }
@@ -132,17 +132,17 @@ body {
   transition: transform 100ms ease-in-out;
   transform: scale(.9);
 }
-
+/*card front hover*/
 .card-front:hover .card-value {
   transform: scale(1);
 }
-
+/*card front*/
 .card-front {
   background-color: #FFBB89;
   border-color: #333;
   transform: rotateY(180deg);
 }
-
+/*overlay text*/
 .overlay-text {
   top: 0;
   left: 0;
@@ -167,7 +167,7 @@ body {
   display: flex;
   animation: overlay-grow 500ms forwards;
 }
-
+/*key frame*/
 @keyframes dance {
   0%, 100% {
     transform: rotate(0)
@@ -190,7 +190,7 @@ body {
     font-size: 10em;
   }
 }
-
+/*adding media query*/
 @media (max-width: 600px) {
   .game-container {
     grid-template-columns: repeat(2, auto)
