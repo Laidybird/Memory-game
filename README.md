@@ -2,7 +2,7 @@
 
 ![screnshot](https://user-images.githubusercontent.com/66474546/206856799-557d536a-2a83-4b9c-a677-003f9c44794d.png)
 
-[View live site here](https://laidybird.github.io/Meory-Game/)
+[View live site here](https://laidybird.github.io/Meory-game/)
 
 The aim of this game is to provide a responsive, easy to use and easy to learn website that is aesthetically pleasing and entertaining for to the users.
 This Game was build as a Milestone project #2 (Java script Esentials) for Diploma in Full Stack Development at Code Institute. 
