@@ -6,7 +6,7 @@
 
 html {
   min-height: 100vh;
-  cursor: url("Audio/Ghost.cur"), auto;
+  cursor: url("Assets/Audio/Ghost.cur"), auto;
   font-family: 'EuroParty', sans-serif;
 }
 
