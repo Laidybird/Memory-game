@@ -5,7 +5,7 @@
 
 [View live site here](https://laidybird.github.io/Memory-game/)
 
-The aim of this game is to provide a responsive, easy to use and easy to learn website that is aesthetically pleasing and entertaining for to the users.I wanted the game to be easy to play and have a good layout. The Game can be played by all ages.
+The aim of this game is to provide a responsive, easy to use and easy to learn website that is aesthetically pleasing and entertaining for to the users.I wanted the game to be easy to play and have a good layout. The Game can be played by all ages. The reason I choose the Halloween theame is that I think its fun and allso has a referance to Transilvania a place that it means a lot to me.
 This Game was build as a Milestone project #2 (Java script Esentials) for Diploma in Full Stack Development at Code Institute.The theame of the Game is Halloween. 
 
 ## Tools Used: HTML5, CSS, JAVA SCRIPT.
